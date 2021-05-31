@@ -68,6 +68,8 @@
     <!-- Order Entry -->
     <string name="order_entry_subtitle">Add products to the order.</string>
     <string name="order_entry_subtitle_checkout">Click the top-right icon to checkout.</string>
+    <string name="product_item_price_description">%1$s | %2$s</string>
+    <string name="product_item_note">%s image</string>
 
     <!-- Order History -->
     <string name="order_history_subtitle">Recent orders listed below.</string>
@@ -114,6 +116,7 @@
     <string name="keypad_9">9</string>
     <string name="keypad_00">00</string>
     <string name="keypad_0">0</string>
+
 
     <!-- Progress / Tasks -->
     <string-array name="progress_dialog_messages">

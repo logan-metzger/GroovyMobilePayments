@@ -73,6 +73,8 @@
     <string name="order_entry_subtitle">Añadir productos al pedido.</string>
     <string name="order_entry_subtitle_checkout">Haga clic en el icono superior derecho para
         finalizar la compra.</string>
+    <string name="product_item_price_description">%1$s | %2$s</string>
+    <string name="product_item_note">%s imagen</string>
 
     <!-- Order History -->
     <string name="order_history_subtitle">Pedidos recientes listados a continuación.</string>

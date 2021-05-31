@@ -67,6 +67,14 @@
                     tools:text="01/26/2020 @ 5:47 PM" />
             </LinearLayout>
 
+            <ImageView
+                android:id="@+id/border_scarlet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:srcCompat="@drawable/grid_item_border_red"
+                tools:visibility="visible" />
+
             <TextView
                 android:id="@+id/description"
                 style="@style/TextView.Small"
@@ -87,12 +95,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/border_scarlet"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone"
-            app:srcCompat="@drawable/grid_item_border_red"
-            tools:visibility="visible" />
     </FrameLayout>
 </androidx.cardview.widget.CardView>
