@@ -34,7 +34,7 @@ import static com.imobile3.groovypayments.data.GroovyDatabase.VERSION;
                 UserEntity.class})
 public abstract class GroovyDatabase extends RoomDatabase {
 
-    public static final int VERSION = 1;
+    public static final int VERSION = 2;
     public static final String NAME = "groovy.sqlite";
 
     public abstract CartDao getCartDao();

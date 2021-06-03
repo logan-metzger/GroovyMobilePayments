@@ -1,5 +1,8 @@
 package com.imobile3.groovypayments.data;
 
+import androidx.annotation.NonNull;
+
+import com.imobile3.groovypayments.data.entities.UserEntity;
 import com.imobile3.groovypayments.data.model.LoggedInUser;
 
 /**
@@ -50,5 +53,9 @@ public class LoginRepository {
             setLoggedInUser(((Result.Success<LoggedInUser>)result).getData());
         }
         return result;
+    }
+    
+    public Result<Void> registerUser(@NonNull UserEntity userEntity){
+        return dataSource.registerUser(userEntity);
     }
 }

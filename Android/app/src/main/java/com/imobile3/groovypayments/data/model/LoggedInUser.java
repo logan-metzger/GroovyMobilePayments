@@ -5,12 +5,14 @@ package com.imobile3.groovypayments.data.model;
  */
 public class LoggedInUser {
 
-    private String displayName;
-    private String userId;
+    final private String displayName;
+    final private String userId;
+    final private String hoursWorked;
 
-    public LoggedInUser(String userId, String displayName) {
+    public LoggedInUser(String userId, String displayName, String hoursWorked) {
         this.userId = userId;
         this.displayName = displayName;
+        this.hoursWorked = hoursWorked;
     }
 
     public String getUserId() {
@@ -19,5 +21,9 @@ public class LoggedInUser {
 
     public String getDisplayName() {
         return displayName;
+    }
+    
+    public String getHoursWorked() {
+        return hoursWorked;
     }
 }

@@ -16,7 +16,7 @@ public interface UserDao {
 
     @Query("SELECT * FROM user")
     List<UserEntity> getUsers();
-
+    
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertUsers(UserEntity... values);
 

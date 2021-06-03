@@ -25,6 +25,9 @@ public class UserEntity {
 
     @ColumnInfo(name = "password")
     private String mPassword;
+    
+    @ColumnInfo(name = "time_logged_in")
+    private String mTimeLoggedIn;
 
     public UserEntity() {
     }
@@ -75,5 +78,13 @@ public class UserEntity {
 
     public void setPassword(String password) {
         mPassword = password;
+    }
+
+    public String getTimeLoggedIn() {
+        return mTimeLoggedIn;
+    }
+
+    public void setTimeLoggedIn(String timeLoggedIn) {
+        mTimeLoggedIn = timeLoggedIn;
     }
 }

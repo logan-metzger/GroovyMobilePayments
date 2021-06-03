@@ -5,11 +5,15 @@ import android.util.Patterns;
 import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.data.LoginRepository;
 import com.imobile3.groovypayments.data.Result;
+import com.imobile3.groovypayments.data.entities.UserEntity;
 import com.imobile3.groovypayments.data.model.LoggedInUser;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.CoroutineDispatcher;
 
 public class LoginViewModel extends ViewModel {
 
@@ -66,5 +70,9 @@ public class LoginViewModel extends ViewModel {
     // A placeholder password validation check
     private boolean isPasswordValid(String password) {
         return password != null && password.trim().length() > 5;
+    }
+    
+    private Result<Void> registerUser(UserEntity userEntity) {
+        return loginRepository.registerUser(userEntity);
     }
 }
